@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- adopted from http://webdesignerwall.com/tutorials/zoom-hero-images-scroll
+ -->
+
+ <head>
+  <meta charset="UTF-8">
+  <title>MAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<!--   <header class="zoom">
+	<img src="history.jpeg">
+	<h1 class = 'historymid'>HISTORY</h1>
+	
+
+</header>
+ -->
+
+<main role="main">
+<nav>
+		<ul class = 'original'>
+			<li id ='History0'><a href="index.html">HOME</a>
+			</li>
+
+			<li id='Consequences0'><a href="modeling.html">MODELING</a>
+
+					
+			</li>
+
+			<li id='Solutions0'><a href="pricing.html">OUR DATA</a>
+			</li>
+			
+		
+		</ul>
+		
+	</nav>
+		<figure class="pwrap">
+<h2>Map of Boston Airbnb Listings</h2>
+<p>It is worthwhile to take an exploratory look at our Airbnb data. We can observe the listings according to each listing's value score! You'll be able to see exactly the listings that work for you, as this interactive plot allows you to get a sense of the different listings of various neighborhoods of Boston, while filtering based on price range, our self-created value score evaluation to see how you can get the best bang for your buck, and room types of the listings.
+
+Click on any individual point to open up a picture of the listing!</p>
+</figure>
+<figure class="tableau">
+
+
+
+<div class='tableauPlaceholder' id='viz1575395334671' style='width: 35%; height: 50%; margin: 0% 0% 0% 15%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cl&#47;clickplotah&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='clickplotah&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cl&#47;clickplotah&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575395334671');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='85%';vizElement.style.height=(divElement.offsetWidth*1.15)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</figure>
+<figure class="pwrap">
+<p>Through this visualization, you are able to get a sense of exactly what kind of listing you could find in Boston based on your own specifications. In town for a Red Sox game? Interested in great value listings near Fenway Park, sleeping in a real bed? Go ahead and select the Fenway neighborhood, the 'Excellent' value score, and the 'Real Bed' bed type! Now you can see just the listings that matter to you. This will help you plan your next trip to Boston.</p>
+</figure>
+
+<figure class="pwrap">
+	<h2 >Neighborhood Analysis</h2>
+<p>In the figure below, we can get a sense of the neighborhoods of Boston and the associated average value scores of each neighborhood. For example, it's looking like it wouldn't be too bad of an idea to look for a listing in the Mattapan neighborhood!  </p>
+</figure>
+
+
+
+<div class='tableauPlaceholder' id='viz1575329535730' style='position: relative; margin: 0% 0% 0% 23%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;dashboardneighborhoodplot&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='dashboardneighborhoodplot&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;dashboardneighborhoodplot&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575329535730');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='900px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='900px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+
+<figure class="pwrap">
+<p>We can also observe the density of value score categories for the Boston neighborhoods below. Charlestown seems to have a very good value distribution, with a great percentage of "Excellent" listings. Meanwhile, you may want to avoid buying a listing in West End, as there are larger proportions of "Poor" and "Mediocre" listings than positively valued listings. </p>
+</figure>
+
+<!-- <div class='tableauPlaceholder' id='viz1575396890912' style='position: relative; margin: 0% 0% 0% 23%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;realvaluedistneighborhoods&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='realvaluedistneighborhoods&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;realvaluedistneighborhoods&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575396890912');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='450px';vizElement.style.height='577px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='450px';vizElement.style.height='577px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+<div class='tableauPlaceholder' id='viz1575397768598' style='position: relative; margin: 0% 0% 0% 30%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;realvaluedist&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='realvaluedist&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;realvaluedist&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575397768598');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='650px';vizElement.style.height='677px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='650px';vizElement.style.height='677px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<figure class="pwrap">
+<p>Finally, we can see the amount of listings for each neighborhood. Most listings will come from South End or Jamaica Plain, with only a handful from Leather District and Longwood Medical Area. </p>
+</figure>
+
+<div class='tableauPlaceholder' id='viz1575397428940' style='position: relative; width: 35%; height: 70%; margin: 0% 0% 0% 15%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ne&#47;neighborhoodcounts&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='neighborhoodcounts&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ne&#47;neighborhoodcounts&#47;Sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575397428940');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.85)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	
+</main>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

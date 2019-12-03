@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- adopted from http://webdesignerwall.com/tutorials/zoom-hero-images-scroll
+ -->
+
+ <head>
+  <meta charset="UTF-8">
+  <title>BOSTON AIRBNB VALUE FINDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <header class="zoom">
+	<img src="boston.jpeg">
+	<h1 class = 'income'>BOSTON</h1>
+	<h1 class = 'inequality'>AIRBNB</h1>
+<!-- 	<h1 class = 'in'>VALUE</h1>
+	<h1 class = 'america'>FINDER</h1> -->
+
+</header>
+
+
+<main role="main">
+<nav>
+		<ul class = 'original'>
+			<li id ='History0'><a href="map.html">MAP</a>
+			</li>
+			<li id='Consequences0'><a href="modeling.html">MODELING</a>
+			</li>
+			<li id='Solutions0'><a href="pricing.html">OUR DATA</a>
+			</li>
+		</ul>
+</nav>
+
+
+<h3 style='margin: 2% 0% -6% 15%';>Authors: James Herman, Ian Fawaz </h3>
+
+<figure class="pwrap">
+	<h2>Finding a Deal</h2>
+
+		<p>There is a lot to sort through when looking for an AirBnB to rent
+		in Boston with dozens of neighborhoods, amenities, and price points. We're here to help.</p>
+
+		<h3>Value Scoring with Artificial Intelligence</h3>
+
+		<p>We have been able to pinpoint the best deals in the city using advanced machine learning
+		algorithms and 69 predictor variables. We want you to spend your hard-earned money enjoying
+		the city and not wasting it on a bad lodging deal.</p>
+
+		<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;ValueScore&space;\leftarrow&space;\frac{Price_{predicted}}{Price_{actual}}&space;-&space;0.15(isSuperhost)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;ValueScore&space;\leftarrow&space;\frac{Price_{predicted}}{Price_{actual}}&space;-&space;0.15(isSuperhost)" title="\large ValueScore \leftarrow \frac{Price_{predicted}}{Price_{actual}} - 0.15(isSuperhost)" /></a>
+		
+		<p>Value scores are mapped based on our model's predicted price relative to the actual price of the listing. We also adjust our value score based on whether the host is categorized by Airbnb as a superhost because we believe our model underappreciates a guest's overall experience when staying with such a host.</p>
+		
+
+		<img src="nn.png" style="width:700px; height:400px;">
+
+		<p><a class="link" href="map.html">Find</a> your next "home away from home" with the help of our
+		proprietary value scoring system, or <a class="link" href="modeling.html">get more information</a> about how we calculate a value score.</p>
+</figure>
+
+
+</main>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

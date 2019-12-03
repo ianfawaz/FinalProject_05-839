@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- adopted from http://webdesignerwall.com/tutorials/zoom-hero-images-scroll
+ -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>PRICING</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<main role="main">
+<nav>
+		<ul class = 'original'>
+			<li class = 'smh'id ='History0'><a href="index.html">HOME</a>
+			</li>
+			<li class = 'smh' id='Consequences0'><a href="map.html"> &nbsp &nbsp MAP</a>
+			</li>
+			<li class = 'smh' id='Solutions0'><a href="modeling.html"> &nbsp MODELING</a>
+			</li>
+		</ul>
+</nav>
+
+
+<figure class="pwrap">
+	<h2>About the Data</h2>
+		<p>
+			An Airbnb dataset of listings in Boston was selected for this exploratory analysis. The data is simply a slice in time, all with a listing data of September 7th, 2016. At a high level, the data contains the following information:
+			<ul>
+				<li>Descriptive information about the listing, including an ID, name, summary, and its location</li>
+				<li>Information related to the host such as their name, ID, and acceptance rate</li>
+				<li>Property data including the number of bedrooms, bathrooms, room type, and square footage</li>
+				<li>Pricing details like the nightly rate, required security deposit, cleaning fee, or longer-term rates</li>
+				<li>Listing reviews in aggregate and in subcategories like cleanliness or location</li>
+			</ul>
+			A total of 3,585 listings are included in the data. After inspection of the columns, many were manually removed to eliminate redundant or irrelevant information which is further discussed on the modeling page.
+		</p>
+
+	<h2>Data Quality</h2>
+		<h3>Correctness</h3>
+			<p>To the best of our knowledge, we believe that the data
+			used in this analysis is correct. Much of the data itself came
+			originally from AirBnB, but some fields were added when before
+			being uploaded to Kaggle. In our exploration of the data, we found
+			the data to be accurate; for example, we were able to tell from
+			visual inspection that the neighborhoods were assigned appropriately
+			in relation to the coordinates of the listing. Additionally, below is
+			a feature correlation matrix we performed prior to modeling.<p>
+
+			<img src="fcm.png" style="width:400px; height:350px;">
+
+			<p>The correlation matrix (only a small subset of features is shown) follows
+			our intuition about the data. Homes with more bedrooms tend to have more bathrooms and can accommodate more people, and we can see that these features are positively correlated. Private rooms on the other hand, are negatively correlated with many of the other features
+			which is also expected.</p>
+
+		<h3>Currency</h3>
+			<p>The currency of the data is less than ideal. All of the listings
+			come from a snapshot in time on the date of September 7th, 2016. Ideally,
+			we would be using real-time information about listings, but this such
+			data is simply unavailable to the public.</p>
+
+		<h3>Completeness</h3>
+			<p>The data was less than perfect from a completeness standpoint.
+			While the original dataset had 3,585 listings, very few actually
+			contained all information for each field. Square footage, for example,
+			was quite uncommon and had to be removed as a feature. After building
+			out our features, we elected to remove listings with missing values
+			since we didn't feel it would be appropriate to replace them with
+			averages or some other measure. Our final data-set contained just
+			shy of 2,000 listings. While the overall completeness of the data was
+			not great, the data in our final set is complete. </p>
+
+		<h3>Consistency</h3>
+			<p>We found the data itself to be consistent overall. During our data
+			exploration phase, we didn't notice oddities such as spelling errors or
+			multiple representations of the same thing. Additionally, it does not appear
+			that there are multiple sources of the data which would provide for opportunities
+			for the data to become inconsistent.</p>
+
+		<h3>References</h3>
+			<p>Original Data: <a class="link" href="map.html">https://www.kaggle.com/airbnb/boston#listings.csv</a></p>
+			<p>Homepage Boston Picture: <a class="link" href="map.html">https://www.visittheusa.com/experience/savor-foodie-weekend-boston-massachusetts</a></p>
+</figure>
+
+</main>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
